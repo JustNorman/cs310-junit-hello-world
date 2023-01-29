@@ -9,8 +9,11 @@
  */
 public class Test {
 
-    public static String testMethod1()
-    {
+    public static String testMethod1(){
         return "Hello, World!";
-    }    
+    }   
+    
+    public static String testMethod2(){
+        return "Hello there, World!";
+    }
 }
