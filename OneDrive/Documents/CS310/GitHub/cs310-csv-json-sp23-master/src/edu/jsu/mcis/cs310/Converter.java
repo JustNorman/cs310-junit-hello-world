@@ -112,7 +112,7 @@ public class Converter {
                 }
                 Data.add(holder);
             }
-            //json.put("ProdNums", Prod);
+            json.put("ProdNums", Prod);
             json.put("ColHeadings", Col);
             json.put("Data", Data);
             result = JSONValue.toJSONString(json);
