@@ -1,7 +1,9 @@
 package edu.jsu.mcis.cs310;
 
-import com.github.cliftonlabs.json_simple.*;
+//import com.github.cliftonlabs.json_simple.*;
 import com.opencsv.*;
+import com.opencsv.exceptions.CsvException;
+import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.Iterator;
@@ -96,9 +98,8 @@ public class Converter {
             JSONArray holder;
             String[] record = iterator.next();
             
-            for(int i = 0; i < record.length; i++)
-            {
-                Prod.add(record[i]);
+            for (String record1 : record) {
+                Prod.add(record1);
             }
             while(iterator.hasNext())
             {
@@ -117,8 +118,7 @@ public class Converter {
             json.put("Data", Data);
             result = JSONValue.toJSONString(json);
         }
-        catch (Exception e) {
-            e.printStackTrace();
+        catch (CsvException | IOException | NumberFormatException e) {
         }
         
         return result.trim();
@@ -164,7 +164,6 @@ public class Converter {
             result = writer.toString();
         }
         catch (Exception e) {
-            e.printStackTrace();
         }
         
         return result.trim();
