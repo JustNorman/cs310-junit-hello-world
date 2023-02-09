@@ -8,10 +8,6 @@ package edu.jsu.mcis.cs310;
  *
  * @author norma
  */
-class JSONObject {
-
-    void put(String colHeadings, JSONArray Col) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+class JSONParser {
     
 }

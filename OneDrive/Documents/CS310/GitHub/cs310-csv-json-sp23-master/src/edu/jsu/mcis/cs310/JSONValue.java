@@ -8,9 +8,9 @@ package edu.jsu.mcis.cs310;
  *
  * @author norma
  */
-class JSONObject {
+class JSONValue {
 
-    void put(String colHeadings, JSONArray Col) {
+    static String toJSONString(JSONObject json) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
